@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="road-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="glow-blue" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="glow-final" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Horizontal Axis Line with Glow -->
+  <line x1="80" y1="120" x2="1020" y2="120" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <line x1="80" y1="120" x2="1020" y2="120" stroke="url(#road-grad)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Direction Arrow at the end -->
+  <polygon points="1015,114 1030,120 1015,126" fill="#10B981"/>
+
+  <!-- ================= NODE 1: DISCOVER ================= -->
+  <!-- Top Tag -->
+  <rect x="150" y="40" width="100" height="26" rx="6" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.2"/>
+  <text x="200" y="57" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#2563EB" letter-spacing="0.06em">PHASE 01</text>
+  <line x1="200" y1="66" x2="200" y2="100" stroke="#93C5FD" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Node Circle -->
+  <circle cx="200" cy="120" r="18" fill="#2563EB" filter="url(#glow-blue)"/>
+  <circle cx="200" cy="120" r="10" fill="#FFFFFF"/>
+  <circle cx="200" cy="120" r="4" fill="#09143F"/>
+
+  <!-- Bottom Details -->
+  <text x="200" y="160" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#09143F">Map Your Goals</text>
+  <text x="200" y="180" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#2563EB">Strategy &amp; Feasibility Audit</text>
+  <text x="200" y="200" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" fill="#64748B">Stakeholder alignment • KPIs • Target scopes</text>
+
+
+  <!-- ================= NODE 2: ARCHITECT ================= -->
+  <!-- Top Tag -->
+  <rect x="500" y="40" width="100" height="26" rx="6" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.2"/>
+  <text x="550" y="57" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#0284C7" letter-spacing="0.06em">PHASE 02</text>
+  <line x1="550" y1="66" x2="550" y2="100" stroke="#7DD3FC" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Node Circle -->
+  <circle cx="550" cy="120" r="22" fill="#0284C7" filter="url(#glow-blue)"/>
+  <circle cx="550" cy="120" r="12" fill="#FFFFFF"/>
+  <circle cx="550" cy="120" r="5" fill="#09143F"/>
+
+  <!-- Bottom Details -->
+  <text x="550" y="160" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#09143F">Tailored Architecture</text>
+  <text x="550" y="180" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#0284C7">Sprint Roadmap &amp; Team Sizing</text>
+  <text x="550" y="200" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" fill="#64748B">Milestone schedule • Tech stack • Fixed budget</text>
+
+
+  <!-- ================= NODE 3: LAUNCH &amp; SCALE ================= -->
+  <!-- Top Tag -->
+  <rect x="850" y="40" width="110" height="26" rx="6" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.2"/>
+  <text x="905" y="57" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#059669" letter-spacing="0.06em">PHASE 03 • SCALE</text>
+  <line x1="905" y1="66" x2="905" y2="96" stroke="#6EE7B7" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Prominent Glowing Destination Sun/Pulse Node -->
+  <circle cx="905" cy="120" r="30" fill="#10B981" fill-opacity="0.2" filter="url(#glow-final)"/>
+  <circle cx="905" cy="120" r="24" fill="#10B981" filter="url(#glow-blue)"/>
+  <circle cx="905" cy="120" r="14" fill="#FFFFFF"/>
+  <circle cx="905" cy="120" r="6" fill="#065F46"/>
+
+  <!-- Bottom Details -->
+  <text x="905" y="162" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#065F46">Agile Launch &amp; Growth</text>
+  <text x="905" y="182" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="600" fill="#059669">Continuous CI/CD &amp; Scaling</text>
+  <text x="905" y="202" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5" fill="#64748B">Bi-weekly sprint demos • Live production • 24/7 SLA</text>
+</svg>

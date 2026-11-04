@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="road-surface" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09143F"/>
+      <stop offset="40%" stop-color="#1E3A8A"/>
+      <stop offset="70%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <linearGradient id="road-edge" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050C26"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+
+    <filter id="node-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Winding 3D Road Base Layer (Extrusion / 3D Thickness) -->
+  <path d="M 80 340 
+           C 240 340, 280 230, 420 230 
+           C 560 230, 600 130, 760 130 
+           C 860 130, 920 80, 1000 70 
+           L 1000 86
+           C 920 96, 860 146, 760 146 
+           C 600 146, 560 246, 420 246 
+           C 280 246, 240 356, 80 356 Z" 
+        fill="url(#road-edge)" opacity="0.9"/>
+
+  <!-- Main Road Surface Ribbon -->
+  <path d="M 80 340 
+           C 240 340, 280 230, 420 230 
+           C 560 230, 600 130, 760 130 
+           C 860 130, 920 80, 1000 70 
+           L 1000 50 
+           C 920 60, 860 110, 760 110 
+           C 600 110, 560 210, 420 210 
+           C 280 210, 240 320, 80 320 Z" 
+        fill="url(#road-surface)"/>
+
+  <!-- Center Dashed Lane Marker Line -->
+  <path d="M 80 330 
+           C 240 330, 280 220, 420 220 
+           C 560 220, 600 120, 760 120 
+           C 860 120, 920 70, 990 60" 
+        fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="10 8" opacity="0.75"/>
+
+  <!-- Destination Arrowhead at Road Terminus -->
+  <polygon points="985,38 1035,58 980,82 995,60" fill="#38BDF8" filter="url(#node-glow)"/>
+
+
+  <!-- ================= STATION 1: FOUNDATION ================= -->
+  <!-- Connector Line -->
+  <line x1="160" y1="330" x2="160" y2="245" stroke="#2563EB" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="160" cy="330" r="6" fill="#38BDF8"/>
+  <!-- Card 1 -->
+  <g transform="translate(70, 115)">
+    <rect width="190" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#node-glow)"/>
+    <rect x="0" y="0" width="190" height="4" rx="2" fill="#2563EB"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#2563EB" letter-spacing="0.06em">PHASE 01 • FOUNDATION</text>
+    <text x="14" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#09143F">Brand &amp; UI/UX Audit</text>
+    <text x="14" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• High-speed web architecture</text>
+    <text x="14" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Conversion-driven UI flows</text>
+    <text x="14" y="99" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Interactive Figma system</text>
+  </g>
+
+
+  <!-- ================= STATION 2: BUILD ================= -->
+  <!-- Connector Line -->
+  <line x1="420" y1="220" x2="420" y2="295" stroke="#2563EB" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="420" cy="220" r="7" fill="#38BDF8"/>
+  <!-- Card 2 -->
+  <g transform="translate(330, 280)">
+    <rect width="190" height="120" rx="12" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5" filter="url(#node-glow)"/>
+    <rect x="0" y="0" width="190" height="4" rx="2" fill="#2563EB"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#2563EB" letter-spacing="0.06em">PHASE 02 • BUILD</text>
+    <text x="14" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#09143F">Software &amp; Mobile</text>
+    <text x="14" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Native iOS &amp; Android apps</text>
+    <text x="14" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Custom multi-tenant SaaS</text>
+    <text x="14" y="99" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Agile pod bi-weekly demos</text>
+  </g>
+
+
+  <!-- ================= STATION 3: SCALE ================= -->
+  <!-- Connector Line -->
+  <line x1="680" y1="140" x2="680" y2="215" stroke="#0284C7" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="680" cy="140" r="7" fill="#38BDF8"/>
+  <!-- Card 3 -->
+  <g transform="translate(590, 205)">
+    <rect width="190" height="120" rx="12" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="1.5" filter="url(#node-glow)"/>
+    <rect x="0" y="0" width="190" height="4" rx="2" fill="#0284C7"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#0284C7" letter-spacing="0.06em">PHASE 03 • INTEGRATE</text>
+    <text x="14" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#09143F">Cloud &amp; DevOps Ops</text>
+    <text x="14" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Automated CI/CD pipelines</text>
+    <text x="14" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• ERP/CRM data integration</text>
+    <text x="14" y="99" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• 99.9% uptime architecture</text>
+  </g>
+
+
+  <!-- ================= STATION 4: ACCELERATION ================= -->
+  <!-- Connector Line -->
+  <line x1="910" y1="90" x2="910" y2="155" stroke="#10B981" stroke-width="2" stroke-dasharray="3 3"/>
+  <circle cx="910" cy="90" r="8" fill="#10B981" filter="url(#node-glow)"/>
+  <!-- Card 4 -->
+  <g transform="translate(820, 145)">
+    <rect width="200" height="125" rx="12" fill="#FFFFFF" stroke="#86EFAC" stroke-width="2" filter="url(#node-glow)"/>
+    <rect x="0" y="0" width="200" height="4" rx="2" fill="#10B981"/>
+    <text x="14" y="24" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#059669" letter-spacing="0.06em">PHASE 04 • ACCELERATE</text>
+    <text x="14" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="800" fill="#065F46">Market Dominance</text>
+    <text x="14" y="65" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Enterprise technical SEO</text>
+    <text x="14" y="82" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• High-ROAS paid acquisition</text>
+    <text x="14" y="99" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#64748B">• Predictable inbound pipelines</text>
+  </g>
+</svg>

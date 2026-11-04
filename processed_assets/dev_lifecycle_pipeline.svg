@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 180" width="100%" height="100%">
+  <defs>
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="node-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#09143F" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background Connecting Track -->
+  <line x1="110" y1="80" x2="990" y2="80" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round"/>
+  <line x1="110" y1="80" x2="990" y2="80" stroke="url(#line-grad)" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+
+  <!-- Iteration Feedback Loop Arc -->
+  <path d="M 980 105 C 900 155, 200 155, 120 105" fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="115,100 125,103 122,112" fill="#94A3B8"/>
+  <text x="550" y="152" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.08em">CONTINUOUS AGILE SPRINTS &amp; CI/CD FEEDBACK LOOPS</text>
+
+  <!-- STAGE 1: DISCOVER -->
+  <g transform="translate(110, 80)" filter="url(#node-shadow)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <circle cx="0" cy="0" r="24" fill="#EFF6FF"/>
+    <!-- Search / Audit Icon -->
+    <path d="M -4 -4 A 6 6 0 1 1 5 5 L 10 10" fill="none" stroke="#2563EB" stroke-width="2.2" stroke-linecap="round"/>
+    <!-- Stage Pill -->
+    <rect x="-35" y="-52" width="70" height="18" rx="9" fill="#2563EB"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.05em">PHASE 01</text>
+  </g>
+
+  <!-- STAGE 2: DEFINE -->
+  <g transform="translate(330, 80)" filter="url(#node-shadow)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+    <circle cx="0" cy="0" r="24" fill="#EFF6FF"/>
+    <!-- Architecture Blueprint Icon -->
+    <rect x="-7" y="-7" width="14" height="14" rx="2" fill="none" stroke="#2563EB" stroke-width="2"/>
+    <line x1="-3" y1="-7" x2="-3" y2="7" stroke="#2563EB" stroke-width="1.5"/>
+    <line x1="-7" y1="0" x2="7" y2="0" stroke="#2563EB" stroke-width="1.5"/>
+    <!-- Stage Pill -->
+    <rect x="-35" y="-52" width="70" height="18" rx="9" fill="#2563EB"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.05em">PHASE 02</text>
+  </g>
+
+  <!-- STAGE 3: DESIGN -->
+  <g transform="translate(550, 80)" filter="url(#node-shadow)">
+    <circle cx="0" cy="0" r="34" fill="#FFFFFF" stroke="#0284C7" stroke-width="3.5"/>
+    <circle cx="0" cy="0" r="26" fill="#F0F9FF"/>
+    <!-- Figma / Pen Tool Icon -->
+    <path d="M -6 -7 L 6 -7 L 2 3 L -2 3 Z" fill="none" stroke="#0284C7" stroke-width="2"/>
+    <circle cx="0" cy="7" r="1.5" fill="#0284C7"/>
+    <!-- Stage Pill -->
+    <rect x="-35" y="-54" width="70" height="18" rx="9" fill="#0284C7"/>
+    <text x="0" y="-42" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.05em">PHASE 03</text>
+  </g>
+
+  <!-- STAGE 4: DEVELOP -->
+  <g transform="translate(770, 80)" filter="url(#node-shadow)">
+    <circle cx="0" cy="0" r="34" fill="#FFFFFF" stroke="#0284C7" stroke-width="3.5"/>
+    <circle cx="0" cy="0" r="26" fill="#F0F9FF"/>
+    <!-- Code Brackets Icon -->
+    <path d="M -4 -6 L -8 0 L -4 6" fill="none" stroke="#0284C7" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M 4 -6 L 8 0 L 4 6" fill="none" stroke="#0284C7" stroke-width="2.2" stroke-linecap="round"/>
+    <line x1="2" y1="-7" x2="-2" y2="7" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Stage Pill -->
+    <rect x="-35" y="-54" width="70" height="18" rx="9" fill="#0284C7"/>
+    <text x="0" y="-42" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.05em">PHASE 04</text>
+  </g>
+
+  <!-- STAGE 5: DEPLOY &amp; SCALE -->
+  <g transform="translate(990, 80)" filter="url(#node-shadow)">
+    <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#10B981" stroke-width="3"/>
+    <circle cx="0" cy="0" r="24" fill="#ECFDF5"/>
+    <!-- Rocket / Launch Icon -->
+    <path d="M 0 -8 C 4 -4, 6 2, 4 8 L -4 8 C -6 2, -4 -4, 0 -8 Z" fill="none" stroke="#10B981" stroke-width="2"/>
+    <circle cx="0" cy="-1" r="2" fill="#10B981"/>
+    <!-- Stage Pill -->
+    <rect x="-35" y="-52" width="70" height="18" rx="9" fill="#10B981"/>
+    <text x="0" y="-40" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" letter-spacing="0.05em">PHASE 05</text>
+  </g>
+</svg>

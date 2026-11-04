@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 95">
+  <defs>
+    <linearGradient id="mob-m-1" x1="104.43" y1="11.64" x2="48.2" y2="67.87" gradientUnits="userSpaceOnUse">
+      <stop offset=".18" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="mob-m-2" x1="105.63" y1="7.61" x2="149.45" y2="83.51" gradientUnits="userSpaceOnUse">
+      <stop offset=".15" stop-color="#FFFFFF"/>
+      <stop offset=".94" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="mob-m-3" x1="13.24" y1="32.79" x2="40.16" y2="79.42" gradientUnits="userSpaceOnUse">
+      <stop offset=".14" stop-color="#FFFFFF"/>
+      <stop offset=".99" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(2, 2)">
+    <path d="M49 36c-4-2-8-2-12-1-9 2-10 11-9 22l1 19c0 6-1 10-5 13-7 6-16 0-17-9-1-11-1-33 3-41 7-14 27-18 39-3Z" fill="url(#mob-m-3)"/>
+    <path d="M118 28c-3 0-5 1-8 5L91 60C85 68 81 74 73 76c-10 3-18 0-25-9-6-7-8-16-16-17 3-10 16-14 23-6 4 5 7 15 11 15 6 0 18-27 30-38 9-6 19-2 22 7Z" fill="url(#mob-m-1)"/>
+    <path d="M99 14c13-18 40-10 43 12 1 9 1 43 0 55-1 14-18 15-20 3-2-15 1-40 0-56-1-13-11-16-23-14Z" fill="url(#mob-m-2)"/>
+  </g>
+</svg>

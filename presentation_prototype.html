@@ -2087,7 +2087,7 @@
     </div>
 
     <!-- SLIDE 18 (TRUSTED CLIENT PORTFOLIO) -->
-    <div class="slide slide-bg-1 slide-hidden" id="slide-18" style="display:none !important;">
+    <div class="slide slide-bg-1" id="slide-18">
       <div class="slide-header" style="margin-bottom:20px;">
         <div class="header-left">
           <span class="kicker-pill">GLOBAL CLIENTELE</span>
@@ -3146,7 +3146,6 @@
   <script>
     const totalSlides = 24;
     let currentSlide = 1;
-    const hiddenSlides = [18]; // Slide 18 is preserved in DOM but hidden from presentation flow
 
     // Slide Titles for dropdown and thumbs
     const slideTitles = [
@@ -3182,8 +3181,6 @@
 
     slideTitles.forEach((name, idx) => {
       const num = idx + 1;
-      if (hiddenSlides.includes(num)) return; // Hide from dropdown and thumbnails
-      
       const displayTitle = `${String(num).padStart(2, '0')} • ${name}`;
       
       const opt = document.createElement('option');
@@ -3200,20 +3197,17 @@
     });
 
     function showSlide(num) {
-      if (hiddenSlides.includes(num)) {
-        num = num + 1;
-      }
       if (num < 1) num = 1;
       if (num > totalSlides) num = totalSlides;
       currentSlide = num;
 
       document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
       const activeSlide = document.getElementById(`slide-${num}`);
-      if (activeSlide && !hiddenSlides.includes(num)) {
+      if (activeSlide) {
         activeSlide.classList.add('active');
       }
 
-      document.getElementById('slideCounter').textContent = `Slide ${num > 18 ? num - 1 : num} / ${totalSlides - hiddenSlides.length}`;
+      document.getElementById('slideCounter').textContent = `Slide ${num} / ${totalSlides}`;
       select.value = num;
 
       document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
@@ -3225,19 +3219,11 @@
     }
 
     function prevSlide() {
-      let target = currentSlide - 1;
-      while (hiddenSlides.includes(target) && target > 1) {
-        target--;
-      }
-      if (target >= 1) showSlide(target);
+      if (currentSlide > 1) showSlide(currentSlide - 1);
     }
 
     function nextSlide() {
-      let target = currentSlide + 1;
-      while (hiddenSlides.includes(target) && target < totalSlides) {
-        target++;
-      }
-      if (target <= totalSlides) showSlide(target);
+      if (currentSlide < totalSlides) showSlide(currentSlide + 1);
     }
 
     function goToSlide(num) {
